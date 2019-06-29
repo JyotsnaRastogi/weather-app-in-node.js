@@ -21,21 +21,21 @@ hbs.registerPartials(partialsPath);
 app.use(express.static(publicDirectoryPath));
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Weather app',
+        title: 'Weather',
         name: 'Jyotsna Rastogi'
     });
 });
 
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'About Page',
+        title: 'About',
         name: 'Jyotsna Rastogi'
     });
 });
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        title: 'Help Page',
+        title: 'Help',
         name: 'Jyotsna Rastogi',
         msg: 'In case you need any help contact us, we are here for you!'
     });
