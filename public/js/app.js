@@ -1,5 +1,3 @@
-console.log('some js');
-
 const weatherForm = document.querySelector('form');
 const input = document.querySelector('input');
 const msg1 = document.querySelector('#msg-1');
