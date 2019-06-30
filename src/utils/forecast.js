@@ -10,7 +10,7 @@ forecast = (latitude, longitude, callback) => {
         }
         else {
             const { daily, currently } = body;
-            callback(undefined, `${daily.summary} It is currently ${currently.temperature} degrees with ${currently.precipProbability*100} % chance of rain`)    
+            callback(undefined, `${daily.summary} It is currently ${currently.temperature} degrees with ${currently.precipProbability*100} % chance of rain. Highest temperature is ${daily.data[0].temperatureHigh} and Lowest temperature is ${daily.data[0].temperatureLow}.`)    
         }
     })
 }
